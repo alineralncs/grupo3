@@ -1,0 +1,124 @@
+.banner{
+    min-width: 30%;
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows:15vh 10vh 55vh 30vh;
+    grid-template-areas: "topo topo topo" "menu menu menu" "cont cont cont" "q q q " "roda roda roda";
+}
+.quadrado {
+    grid-area:q;
+}
+.banner {
+    background-image: url("imgs/back.jpg");
+   background-size: cover;
+  
+   background-repeat: no-repeat;    
+}
+.topo {
+    text-align: center;
+    grid-area:topo;
+
+}
+.menu {
+    min-width: 10%;
+    max-width: 100%;
+    top:-20px;
+    position:relative;
+    grid-area:menu;
+  
+}
+.conteudo {
+    min-width: 30%;
+    grid-area:cont;
+    
+}
+.roda {
+         grid-area:roda;
+}
+h2{
+    font-size: 50px;
+    position: relative;
+    top:30px;
+    color:white;
+
+}
+h1 {
+    font-size: 4em;
+    color: white;
+}
+.menu ul li a:hover {
+    color: red;
+}
+.menu ul li {
+    padding-top: 2em;
+    margin-left: 8em;
+    position: relative;
+    display:inline-block
+}
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+.conteudo h1{color: white; font-size: 3em; text-align: center; padding-top: 40px;}
+
+@media screen and(min-width:1000px) {
+    hr {display: none}
+}
+hr {
+    position: relative;
+    left: 30em;
+    width: 7em;
+    border: 2px solid red;
+    animation-name: hr;
+    animation-duration: 4s;
+}
+
+@keyframes hr {
+    from {width:7em;}
+    to {width:10em;}
+}
+
+.conteudo p {
+    color: white;
+    padding-top: 1.2em;
+    font-size: 2.5em;
+    text-align: center;
+}
+.quadrado {
+    grid-area:q;
+    border:0.5em solid white;
+    width: 15%;
+    height: 15%;
+    left:30em;  
+    position: relative;
+}
+.quadrado p{top:-40px; position: relative;}
+
+.roda img{
+    min-width:1%;
+    max-width: 3%;
+    position: relative;
+   
+    float: right;
+    padding: 0.5em 0.5em 0.5em;
+}
+
+form {
+    width: 50%;
+    color: white;
+    padding-top: 3em;
+    left: 20%;
+    position: relative;
+}
+
+button {
+    background-color: red;
+    border: black;
+    min-width: 10%;
+    position: relative;
+    left: 30%;
+    top: 20%;
+    border-radius: 2em;
+}
